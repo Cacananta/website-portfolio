@@ -1,0 +1,26 @@
+{
+  "name": "website-portfolio",
+  "version": "1.0.0",
+  "description": "Now that I know more, I'm remaking my website!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cacananta/website-portfolio.git"
+  },
+  "author": "Corey Cacananta <cacananta@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Cacananta/website-portfolio/issues"
+  },
+  "homepage": "https://github.com/Cacananta/website-portfolio#readme",
+  "dependencies": {
+    "body": "^5.1.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "parser": "^0.1.4"
+  }
+}

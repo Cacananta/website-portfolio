@@ -1,0 +1,346 @@
+/* GOLD: #CCAC00  */
+/* BURGUNDY: #800020  */
+/* TURQUOISE: #39C9BB  */
+
+/*NAVY BLUE FOUND ONLINE:  #384b5f  */
+
+/* INTRO */
+
+     * {
+  border: red solid 1px; 
+}          
+
+header {
+  height: 10vh;
+  background-color:#39C9BB;
+}
+
+#intro {
+  height: 90vh;
+  background-color: #CCAC00;
+}
+
+#intro-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+#intro-navbar nav a {
+  font-size: 20px;
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px 2px #384b5f;
+}
+
+#hero-container {
+  height: 52vh;
+}
+
+#hero-image {
+  display: flex;
+  justify-content: center;
+  background: white;
+  height: 50vh;
+}
+
+#logo-image {
+  height: 49vh;
+  width: 49vh;
+}
+
+#write-text-container {
+  height: 38vh;
+}
+
+#write-area-text {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: 'Rokkitt', serif;
+  font: bold;
+  font-size: 75px;
+}
+
+#rotate-burgundy {
+  width: 100vh;
+  height: 5vh;
+  background-color: #800020;
+   transform: rotate(5deg); 
+}
+
+#rotate-navy {
+  width: 100vh;
+  height: 5vh;
+  background-color: #384b5f;
+  transform: rotate(-5deg)
+}
+
+/* ABOUT */
+
+#about {
+  height: 100vh;
+  background-color: #800020
+}
+
+.about-me-header {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+#about-me-content {
+  display: flex;
+  justify-content: center;
+}
+
+#about-me-img {
+   display: flex;
+   justify-content: center;
+   align-content: center;
+ }
+
+.corey-candid {
+  border-radius: 50%;
+  width: 20%;
+  height: 20%;
+  margin: 15px;
+}
+
+#about-me-content {
+  display: flex;
+  justify-content: center;
+}
+
+#about-me-text {
+  width: 50%;
+}
+
+.about-me-p {
+  color: white;
+  margin: 0px;
+}
+
+/* SKILLS */
+
+#skills {
+  height: 100vh;
+  background: linear-gradient(15deg,#CCAC00, #800020)
+}
+
+/* PORTFOLIO */
+
+#portfolio {
+  height: 100vh;
+}
+
+#portfolio-h1 {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px
+}
+
+#portfolio-display {
+  border: red solid 1px;
+  display: flex;
+  justify-content: center;
+  height: 75vh;
+}
+
+#portfolio-grid-container {
+  border: red solid 1px; 
+  display: flex;
+  height: 75vh;
+  width: 80vw;
+}
+
+#one {
+  position: absolute;
+  height: 15%;
+  width: 15%;
+  margin-top: 8%;
+  margin-left: 30%;
+}
+
+#one a img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 25px #777777;
+  transition: all 400ms ease-in;
+  transform: scale(1.05);
+}
+
+#one:hover {
+  transition: all 400ms ease-in;
+  transform: scale(1.05);
+  }
+
+#two {
+  position: absolute;
+  height: 15%;
+  width: 15%;
+  margin-top: 25%;
+  margin-left: 15%; 
+}
+
+#two a img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 25px #777777;
+}
+
+#two:hover {
+  transition: all 400ms ease-in;
+  transform: scale(1.05);
+  }
+
+#three {
+  position: absolute;
+  height: 15%;
+  width: 15%;
+  margin-top: 20%;
+  margin-left: 50%; 
+}
+
+#three a img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 25px #777777;
+}
+
+#three:hover {
+  transition: all 400ms ease-in;
+  transform: scale(1.05);
+  }
+
+#four {
+  position: absolute;
+  height: 8%;
+  width: 4%;
+  margin-top: 15%;
+  margin-left: 20%; 
+}
+
+#four a img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 25px #777777;
+}
+
+#five {
+  position: absolute;
+  height: 8%;
+  width: 4%;
+  margin-top: 20%;
+  margin-left: 37.5%; 
+}
+
+#five a img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 25px #777777;
+}
+
+#six {
+  position: absolute;
+  height: 8%;
+  width: 4%;
+  margin-top: 10%;
+  margin-left: 55%; 
+}
+
+/* GRID SYSTEM (3 x 3) */
+
+/* .wrapper {
+  padding: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  width: 100%
+}
+.one {
+  grid-column: 1;
+  grid-row: 1;
+}
+.two { 
+  grid-column: 2;
+  grid-row: 1;
+}
+.three {
+  grid-column: 3;
+  grid-row: 1;
+}
+.four {
+  grid-column: 1;
+  grid-row: 2;
+}
+.five {
+  grid-column: 2;
+  grid-row: 2;
+}
+.six {
+  grid-column: 3;
+  grid-row: 2;
+}
+.seven {
+  grid-column: 1;
+  grid-row: 3;
+}
+.eight {
+  grid-column: 2;
+  grid-row: 3;
+}
+.nine {
+  grid-column: 3;
+  grid-row: 3;
+}
+.ten {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  margin-left: 30%;
+  margin-top: 30%;
+} */
+
+           /* <div class="wrapper">
+            <div class="one">One</div>
+            <div class="two">Two</div>
+            <div class="three">Three</div>
+            <div class="four">Four</div>
+            <div class="five">Five</div>
+            <div class="six">Six</div>
+            <div class="seven">Seven</div>
+            <div class="eight">Eight</div>
+            <div class="nine">Nine</div>
+            <div class="ten">A</div>
+          </div>  */
+
+/* CONTACT */
+
+#contact {
+  height: 100vh;
+  background: linear-gradient(-15deg,#384b5f, #39C9BB);
+}
+
+#contact-header {
+  height: 10vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 3px 3px 3px #384b5f;
+}
+
+#contact-form {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+form {
+  width: 50%;
+  align-content: center;
+}
