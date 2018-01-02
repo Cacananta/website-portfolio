@@ -2,11 +2,12 @@
 <html>
   <head>
     <title>Corey Codes</title>
-    <link rel="icon" type="image/x-icon" href="/img/CC_Logo_Favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">    
     <link rel='stylesheet' href='style.css'/>
-    <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Josefin+Sans|Raleway" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://use.fontawesome.com/a30fd4e771.js"></script>
   </head>
   <body>
     <section id="header">
@@ -25,31 +26,49 @@
     <section id='intro'>
       <div id="hero-container">
         <div id="hero-image">
-          <img id="logo-image" src="/img/CC_logo.png" alt="Corey Cacananta Logo">
+          <img id="logo-image" src="/img/CC_logo-transparent.png" alt="Corey Cacananta Logo">
         </div>
       </div>
       <div id="write-text-container">
         <div id="write-area-text">
           <h1 id="write-text"></h1>
         </div>
-          <div class="parallax-port" id="rotate-burgundy">
-          </div>
-          <div class="parallax-port" id="rotate-navy">
-          </div>
+          <h2 id="hidden-text">go. think. dream.</h2>
       </div>
+      <div class="parallax-1" id="rotate-burgundy">
+      </div>
+      <div class="parallax-2" id="rotate-navy">
+      </div> 
+      <div class="parallax-3" id="rotate-turquoise">
+      </div>
+      <div class="parallax-4" id="rotate-gold">
+      </div> 
     </section>
 
     <section id='about'>
-      <div class="about-me-header">
+      <div id="about-me-header">
         <h1>about me</h1>
       </div>
         <div id='about-me-img'>
           <img class="corey-candid" src="img/Corey_candid.jpg" alt="Corey"/>
         </div>
-          <div id="about-me-content">
-            <div id="about-me-text">
-              <p class="about-me-p">I'm a former financial analyst learning to code. My work experience has facilitated my transition to thinking like a full stack JavaScript developer. I enjoy solving problems and especially like using data to create value-added solutions. I have been successful at this because analytical thinking comes naturally to me. I enjoy 
-              collaborating and welcome any opportunity to network and learn. The most important concepts I've learned through coding is to enjoy the process and never underestimate the power of curiosity.
+          <div id="about-me-text">
+            <div id="about-me-code">
+              <h2 id="coding-h2">My Journey To Coding</h2>
+              <p class="about-me-p">I'm a former financial analyst learning to code. My work experience has 
+              facilitated my transition to becoming a JavaScript developer. I enjoy solving problems and 
+              especially like using data to create value-added solutions. I've been successful at this because 
+              analytical thinking comes naturally to me. The most important concepts I've learned through 
+              coding is to enjoy the process and never underestimate the power of curiosity.
+              </p>
+            </div>
+            <div id="about-me-life">
+              <h2 id="life-h2">When I'm Not Coding</h2>
+              <p class="about-me-p">I was born and raised in Southern California which probably explains my 
+              passion for health, fitness, and the outdoors. You can probably find me cooking up delicious 
+              plant-based meals, pushing myself physically to prepare for a hike or climb, or meditating to 
+              reset and clear my mind. I love finding new ways to challenge myself because it keeps me present, 
+              engaged, and most of all, happy!
               </p>
             </div>
           </div>
@@ -57,30 +76,86 @@
       </div>
     </section>
 
-    <section id='skills'>
-      
-    </section>
-
-    <section id='portfolio'>
-      <div id="portfolio-h1">
-        <h1>Portfolio</h1>
+    <section id="skills">
+      <div id="skills-header">
+        <h1>skills</h1>
       </div>
-      <div id="portfolio-display">
-        <div id="portfolio-grid-container">
-          <table>
-            <div class="parallax-port" id="one"><a href="https://cc-california-surf-report.herokuapp.com/" target="_blank"><img src="/img/hack-a-thon.png"/></a></div>
-            <div class="parallax-port" id="two"><a href="https://cc-react-vstda.herokuapp.com/" target="_blank"><img src="/img/VSTDA.png"/></a></div>
-            <div class="parallax-port" id="three"><a href="https://cc-movie-finder.herokuapp.com/" target="_blank"><img src="/img/movie-finder.png"/></a></div>
-            <div class="parallax-links" id="four"><a href="https://github.com/Cacananta" target="_blank"><img src="/img/Github.png"></a></div>
-            <div class="parallax-links" id="five"><a href="https://www.linkedin.com/in/coreycacananta/" target="_blank"><img src="/img/LinkedIn.png"/></a></div>
-            <div class="parallax-links" id="six">Six</div>
-          </table>
+      <div id="skills-wrapper">
+        <div id="resume-id">
+          <div id="resume-text">
+            <h1>Resume</h1>
+          </div>
+          <a href="img/resume.pdf" target="_blank"><img id="resume-img" src="img/resume.png" alt="resume"/></a>
+        </div>
+        <div id="skills-id">
+          <h1>Technical</h1>
+          <p class="skills-p">HTML / CSS</p>
+          <div class="skill-container">
+            <div class="skills html-css">65%</div>
+          </div>
+          <p class="skills-p">MongoDB</p>
+          <div class="skill-container">
+            <div class="skills mongo">60%</div>
+          </div>
+          <p class="skills-p">JavaScript</p>
+          <div class="skill-container">
+            <div class="skills javascript">55%</div>
+          </div>
+          <p class="skills-p">React.js</p>
+          <div class="skill-container">
+            <div class="skills react">60%</div>
+          </div>
+          <p class="skills-p">Node.js</p>
+          <div class="skill-container">
+            <div class="skills node">50%</div>
+          </div>
+          <p class="skills-p">Professionalism / Work Ethic / Attitude</p>
+          <div class="skill-container">
+            <div class="skills soft-skills">100%</div>
+          </div>
         </div>
       </div>
     </section>
 
+    <section id='portfolio'>
+      <div id="portfolio-header">
+        <h1 id="portfolio-h1">portfolio</h1>
+      </div>
+          <div id="portfolio-display">
+            <div class="port-containers">
+              <a href="https://cc-california-surf-report.herokuapp.com/" target="_blank"><img class="port-project" src="/img/hack-a-thon.png" alt="hack-a-thon Project"/></a>
+              <h3>California Surf Report</h3>
+              <p class="port-desc">This surf report app uses React and Express to help get the latest surf conditions. 
+              Although the initial build only took me 72 hours, this is an ongoing project that I hope to launch as a 
+              Google PWA (progressive web application). Stay tuned!</p>
+            </div>
+            <div class="port-containers">
+              <a href="https://delicious-deliveries.herokuapp.com/#/" target="_blank"><img class="port-project" src="/img/delicious-deliveries.png" alt="Delicious Deliveries Project"/></a>
+              <h3>Delicious Deliveries</h3>
+              <p class="port-desc">During this team project we created a full-stack food delivery application. 
+              We used React Redux to manage our components, we built database endpoints to capture user authentication, 
+              and used an agile work flow to manage our one-week sprint.
+              </p>
+            </div>
+            <div class="port-containers">
+              <a href="https://cc-movie-finder.herokuapp.com/" target="_blank"><img class="port-project" src="/img/movie-finder.png" alt="Movie Finder Project"/></a>
+              <h3>Movie Finder</h3>
+              <p class="port-desc">This application was one of my first introductions to using React Redux and
+              certainly my first project using Thunk middleware to optimize API calls. I really enjoy using
+              database information to create custom user interfaces.</p>
+            </div>
+          </div>
+        <div id="social-media">
+          <a href="https://github.com/Cacananta" target="_blank"><i id="github" class="fa fa-github-square fa-5x" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/coreycacananta/" target="_blank"><i id="linkedin" class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a>
+        </div>
+    </section>
+
     <section id='contact'>
-      <h1 id="contact-header">Contact Me</h1>
+      <div id="contact-header">
+        <h1>contact me</h1>
+      </div>
+      <p id="contact-desc">I enjoy collaborating and welcome any opportunity to network, learn, and help others by sharing what I know</p>
               <div id='contact-form'>
                 <form action="/thanks" method="POST">
                   <div class="input-group">
@@ -108,6 +183,15 @@
                   </div>
                 </form>
               </div>
+              <div id="contact-footer">
+                <div id="footer-logo">
+                  <a href="#header"><img src="/img/CC_logo-transparent.png" alt="Corey Cacananta Logo"/></a>
+                </div>
+              <div id="footer-rights">
+                <p>©2018 Corey Cacananta</p>
+                <p>All Rights Reserved</p>
+              </div>
+            </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>

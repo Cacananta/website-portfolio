@@ -1,16 +1,22 @@
 $(document).ready(function () {
 
   // Parallax Scrolling
-console.log(Math.round((($('table').position().top))));
 
       // var scrollTop = $('window').scrollTop();
 
   function parallaxScroll() {
-      var scale = 0.1;
       var scrollTop = $(window).scrollTop();
-      $('.parallax-port').each(function () {
-        $(this).css('top', Math.round(((0 - scrollTop))) + 'px');
-      });
+      var windowHeight = $(window).height();
+      //parallax up
+      $('.parallax-1').css('top', ((windowHeight * 0.75) - (scrollTop * 2.0)) + 'px');
+      $('.parallax-2').css('top', ((windowHeight * 0.75) - (scrollTop * 2.5)) + 'px');
+      $('.parallax-3').css('top', ((windowHeight * 0.75) - (scrollTop * 1.5)) + 'px');
+      $('.parallax-4').css('top', ((windowHeight * 0.75) - (scrollTop * 1.0)) + 'px');
+      //parallax down
+      $('.parallax-5').css('top', ((windowHeight * 1.3) + (scrollTop * 1.05)) + 'px');
+      $('.parallax-6').css('top', ((windowHeight * 1.3) + (scrollTop * 1.06)) + 'px');
+      $('.parallax-7').css('top', ((windowHeight * 1.3) + (scrollTop * 1.07)) + 'px');
+      $('.parallax-8').css('top', ((windowHeight * 1.3) + (scrollTop * 1.08)) + 'px');
   }
 
   // Smooth Scrolling
@@ -22,7 +28,7 @@ console.log(Math.round((($('table').position().top))));
         if (target.length) {
           $('html,body').animate({
             scrollTop: target.offset().top
-          }, 1500);
+          }, 2500);
           return false;
         }
       }
@@ -52,5 +58,10 @@ console.log(Math.round((($('table').position().top))));
 
   $("#write-text").writeText('FULL STACK JAVASCRIPT DEVELOPER');
 
+  // Skill Container Animation
+  //   $('.skill-container').each(function(){
+  //   $(this).find('.skillbar').animate({
+  //     width:$(this).attr('name')
+  //   },2500);
+  // });
 });
-
