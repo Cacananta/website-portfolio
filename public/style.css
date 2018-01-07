@@ -22,9 +22,9 @@ font-family: 'Josefin Sans', sans-serif;
 font-family: 'Raleway', sans-serif; */
 
 
-   /* * {
+    * {
 border: red solid 1px; 
-}                                */
+}                                     
 
 /* INTRO */
 
@@ -87,6 +87,7 @@ header {
 
 #write-text {
   font-size: 4vh;
+  text-align: center;
 }
 
 #hidden-text {
@@ -96,6 +97,7 @@ header {
   font-size: 5vh;
   font-family: 'Didact Gothic', sans-serif;
   color: #00CED1;
+  text-shadow: -1px 0 #384b5f, 0 1px #384b5f, 1px 0 #384b5f, 0 -1px #384b5f;
   height: 75%;
 }
 
@@ -234,11 +236,11 @@ header {
 #skills-header h1 {
   font-size: 8vh;
   font-family: 'Didact Gothic', sans-serif;
-    text-shadow: 3px 2px 0px #860B1D, 6px 5px 0px #CCAC00;
+  text-shadow: 3px 2px 0px #860B1D, 6px 5px 0px #CCAC00;
 }
 
 #skills-wrapper {
-  height: 85vh;
+  height: 80vh;
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -249,15 +251,14 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 50vw;
   height: 100%;
   flex-direction: column;
 }
 
- #resume-text {
+ #resume-h1 {
   display: flex;
   justify-content: center;
-  width: 50%;
   color: white;
   font-family: 'Didact Gothic', sans-serif;
 }
@@ -280,8 +281,15 @@ header {
   font-family: 'Didact Gothic', sans-serif;
 }
 
+#skills-desc {
+  font-size: 3vh;
+  text-align: center;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
 .skill-container {
-    width: 75%;
+    width: 50%;
     background-color: #ccc;
 }
 
@@ -302,27 +310,33 @@ header {
 .html-css {
   width: 65%; 
   background-color:#CCAC00;
+  color: #CCAC00;
 }
 .mongo {
-  width: 60%; 
-  background-color:#800020;
-}
-.javascript {
   width: 55%; 
   background-color:#39C9BB;
+  color: #39C9BB;
+}
+.javascript {
+  width: 60%; 
+  background-color:#800020;
+  color: #800020;
 }
 .react {
   width: 60%; 
   background-color: #384b5f;
+  color: #384b5f;
 }
 .node {
-  width: 50%;
+  width: 55%;
   background-color: #CCAC00;
+  color: #CCAC00;
 }
 
 .soft-skills {
   width: 100%;
   background-color: #39C9BB;
+  color: #39C9BB;
 }
 
 /* PORTFOLIO */
@@ -342,7 +356,7 @@ header {
 #portfolio-header h1 {
   font-size: 8vh;
   font-family: 'Didact Gothic', sans-serif;
-  text-shadow: 3px 2px 0px #fff, 6px 5px 0px rgba(0,0,0,0.15);
+  text-shadow: 3px 2px 0px #FFF, 6px 5px 0px #D9D9D9;
 }
 
 #portfolio-display {
@@ -488,4 +502,109 @@ button:hover {
   color: white;
   font-size: 1.75vh;
   font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+
+@media (min-width: 320px) and (max-width: 1000px) {
+
+  /* INTRO */
+
+
+
+  /* ABOUT */
+
+  #about {
+    height: auto;
+  }
+  #about-me-text {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: auto;
+  }
+
+  .corey-candid {
+  width: 40%;
+  height: 40%;
+  }
+
+  #about-me-code,
+  #about-me-life {
+    width: 100vw;
+    /* flex-direction: column;
+    align-items: center; */
+  }
+
+  .about-me-p {
+    width: 95vw;
+    text-align: center;
+  }
+
+  #coding-h2,
+  #life-h2 {
+    margin: 1.5vh 0;
+  }
+
+  /* SKILLS */
+
+  #skills {
+    height: auto;
+  }
+
+  #skills-wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #resume-id,
+  #skills-id {
+    width: 100vw;
+    height: auto;
+  }
+
+  #skills-id {
+    margin: 3vh 0;
+  }
+
+  .react {
+    font-size: 1vh;
+  }
+
+  /* .soft-skills {
+    padding-bottom: 2vh
+  } */
+
+  /* PORTFOLIO */
+
+  #portfolio {
+    height: auto;
+  }
+
+  #portfolio-display {
+     flex-direction: column;
+     height: auto;
+  }
+
+  .port-containers {
+    margin: 2vh 0;
+  }
+
+  .port-project {
+    width: 75vw;
+  }
+
+  .port-desc {
+    width: 90vw;
+  }
+
+  /* CONTACT */
+
+  #contact {
+    height: auto;
+  }
 }
