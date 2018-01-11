@@ -4,7 +4,6 @@
 /* GOLD: #CCAC00  */
 /* BURGUNDY: #800020  */
 /* TURQUOISE: #39C9BB  */
-
 /*NAVY BLUE FOUND ONLINE:  #384b5f  */
 
 /* PARALLAX DOWN
@@ -21,10 +20,14 @@
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Raleway', sans-serif; */
 
-
-    /* * {
+     /* * {
 border: red solid 1px; 
-}                                      */
+}                                       */
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
 
 /* INTRO */
 
@@ -504,11 +507,38 @@ button:hover {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+/* THANKS */
 
+#thank-you {
+  background: linear-gradient(-15deg, #CCAC00, #800020, #39C9BB, #384b5f);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+ #thank-you-h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 10vh;
+  font-family: 'Didact Gothic', sans-serif;
+  text-shadow: 4px 3px 0px #4a9e9a, 7px 6px 0px #D9D9D9
+}
+
+#thank-you-h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 10vh;
+  font-family: 'Didact Gothic', sans-serif;
+  text-shadow: 4px 3px 0px #75253f, 7px 6px 0px #D9D9D9
+} 
 
 /* MEDIA QUERIES */
-
-
 
 @media (min-width: 320px) and (max-width: 1000px) {
 
