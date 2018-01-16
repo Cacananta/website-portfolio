@@ -20,9 +20,9 @@
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Raleway', sans-serif; */
 
-     /* * {
+       /* * {
 border: red solid 1px; 
-}                                       */
+}                                         */
 
 body {
   max-width: 100vw;
@@ -154,6 +154,7 @@ header {
   height: 100vh;
   width: 100vw;
   background: linear-gradient(to bottom,#a96017, #800020);
+  padding-bottom: 2vh;
 }
 
 #about-me-header {
@@ -165,7 +166,7 @@ header {
 }
 
 #about-me-header h1 {
-  font-size: 8vh;
+  font-size: 10vh;
   font-family: 'Didact Gothic', sans-serif;
   text-shadow: 3px 2px 0px #A65819, 6px 5px 0px #39C9BB;
 }
@@ -198,6 +199,9 @@ header {
 
 #about-me-code,
 #about-me-life {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 30vw;
 }
 
@@ -210,12 +214,14 @@ header {
 
 #coding-h2 {
   color: #39C9BB;
+  font-size: 5vh;
   text-align: center;
   font-family: 'Didact Gothic', sans-serif;
 }
 
 #life-h2 {
   color: #CCAC00;
+  font-size: 5vh;
   text-align: center;
   font-family: 'Didact Gothic', sans-serif;
 }
@@ -223,7 +229,7 @@ header {
 /* SKILLS */
 
 #skills {
-  height: 100vh;
+  height: auto;
   width: 100vw;
   background: linear-gradient(to bottom,#800020, #CCAC00);
 }
@@ -237,7 +243,7 @@ header {
 }
 
 #skills-header h1 {
-  font-size: 8vh;
+  font-size: 10vh;
   font-family: 'Didact Gothic', sans-serif;
   text-shadow: 3px 2px 0px #860B1D, 6px 5px 0px #CCAC00;
 }
@@ -259,7 +265,7 @@ header {
   flex-direction: column;
 }
 
- #resume-h1 {
+ #resume-h2 {
   display: flex;
   justify-content: center;
   color: white;
@@ -279,7 +285,7 @@ header {
   height: 100%;
 }
 
-#skills-id h1 {
+#skills-id h2 {
   color: white;
   font-family: 'Didact Gothic', sans-serif;
 }
@@ -357,7 +363,7 @@ header {
 }
 
 #portfolio-header h1 {
-  font-size: 8vh;
+  font-size: 10vh;
   font-family: 'Didact Gothic', sans-serif;
   text-shadow: 3px 2px 0px #FFF, 6px 5px 0px #D9D9D9;
 }
@@ -457,7 +463,7 @@ h3 {
 }
 
 #contact-header h1 {
-  font-size: 8vh;
+  font-size: 9.5vh;
   font-family: 'Didact Gothic', sans-serif;
 }
 
@@ -503,6 +509,8 @@ button:hover {
 
 #footer-rights p {
   color: white;
+  display: inline-block;
+  margin: 0px;
   font-size: 1.75vh;
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -540,11 +548,9 @@ button:hover {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 320px) and (max-width: 1000px) {
+@media (min-width: 320px) and (max-width: 1200px) {
 
   /* INTRO */
-
-
 
   /* ABOUT */
 
@@ -635,6 +641,10 @@ button:hover {
   /* CONTACT */
 
   #contact {
+    height: auto;
+  }
+
+  #contact-form {
     height: auto;
   }
 }
