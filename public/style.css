@@ -1,28 +1,15 @@
-/*LINKEDIN IMG ICON: <img class="social-media-links" src="/img/LinkedIn.png"/>
-<img class="social-media-links" src="/img/Github.png">  */
-
 /* GOLD: #CCAC00  */
 /* BURGUNDY: #800020  */
 /* TURQUOISE: #39C9BB  */
-/*NAVY BLUE FOUND ONLINE:  #384b5f  */
-
-/* PARALLAX DOWN
-  <div class="parallax-5" id="rotate-burgundy1">
-  </div>
-  <div class="parallax-6" id="rotate-navy1">
-  </div> 
-  <div class="parallax-7" id="rotate-turquoise1">
-  </div>
-  <div class="parallax-8" id="rotate-gold1">
-  </div> */
+/*NAVY BLUE FOUND ONLINE:  #384B5F */
 
 /* font-family: 'Didact Gothic', sans-serif;
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Raleway', sans-serif; */
 
-     /* * {
+  /* * {
 border: red solid 1px; 
-}                                             */
+}                                                */
 
 body {
   max-width: 100vw;
@@ -83,6 +70,7 @@ header {
 #write-area-text {
   display: flex;
   justify-content: center;
+  height: auto;
   color: white;
   font: bold;
   font-family: 'Raleway', sans-serif;
@@ -101,7 +89,7 @@ header {
   font-family: 'Didact Gothic', sans-serif;
   color: #00CED1;
   text-shadow: -1px 0 #384b5f, 0 1px #384b5f, 1px 0 #384b5f, 0 -1px #384b5f;
-  height: 75%;
+  height: 50%;
 }
 
 #rotate-burgundy {
@@ -148,7 +136,33 @@ header {
   z-index: 2;
 }
 
+ #intro-arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: auto;
+} 
+
+#intro-arrow-container a {
+  text-decoration: none;
+}
+
+#intro-arrow {
+  color: #384B5F;
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+#intro-arrow:hover {
+  color: #800020;
+}
+
+
+
 /* ABOUT */
+
+
 
 #about {
   height: 100vh;
@@ -191,7 +205,7 @@ header {
 
 #about-me-text {
   width: 100%;
-  height: 40%;
+  height: 35%;
   display: flex;
   justify-content: space-around; 
   align-content: center; 
@@ -227,7 +241,34 @@ header {
   font-family: 'Didact Gothic', sans-serif;
 }
 
+ #about-me-arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: auto;
+} 
+
+#about-me-arrow-container a {
+  text-decoration: none;
+}
+
+#about-me-arrow {
+  color: #39C9BB;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
+
+#about-me-arrow:hover {
+  color: #CCAC00;
+}
+
+
+
 /* SKILLS */
+
+
 
 #skills {
   height: auto;
@@ -250,7 +291,7 @@ header {
 }
 
 #skills-wrapper {
-  height: 80vh;
+  height: 70vh;
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -261,9 +302,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 50vw;
   height: 100%;
-  flex-direction: column;
 }
 
  #resume-h2 {
@@ -349,7 +390,37 @@ header {
   color: #39C9BB;
 }
 
+#skills-arrow-container {
+  height: auto;
+}
+
+#skills-arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: auto;
+} 
+
+#skills-arrow-container a {
+  text-decoration: none;
+}
+
+#skills-arrow {
+  color: #384B5F;
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+#skills-arrow:hover {
+  color: #800020;
+}
+
+
+
 /* PORTFOLIO */
+
+
 
 #portfolio {
   height: 100vh;
@@ -373,6 +444,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: column;
   height: 75vh;
 }
 
@@ -446,7 +518,35 @@ h3 {
   color: #CCAC00;
 }
 
+#portfolio-arrow-container {
+  height: auto;
+}
+
+#portfolio-arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: auto;
+} 
+
+#portfolio-arrow-container a {
+  text-decoration: none;
+}
+
+#portfolio-arrow {
+  color: #384B5F;
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+#portfolio-arrow:hover {
+  color: #CCAC00;
+}
+
 /* CONTACT */
+
+
 
 #contact {
   height: 100vh;
@@ -559,6 +659,11 @@ button:hover {
 @media (min-width: 320px) and (max-width: 1200px) {
 
   /* INTRO */
+
+  #write-text {
+    font-size: 3vh;
+    text-align: center;
+  }
 
   /* ABOUT */
 
